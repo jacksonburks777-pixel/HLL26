@@ -1,0 +1,18 @@
+[package]
+name = "rec-league-franchise"
+version = "0.1.0"
+description = "Rec League Franchise desktop app"
+edition = "2021"
+
+[lib]
+name = "rec_league_franchise_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-fs = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
